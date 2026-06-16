@@ -1,0 +1,227 @@
+/* Recedo — recesso.css */
+
+/* ── Pulsante ──────────────────────────────────────────────────────────────── */
+.wcr54-btn-recesso {
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border: 1.5px solid #c0392b !important;
+    background: transparent !important;
+    color: #c0392b !important;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+}
+
+.wcr54-btn-recesso:hover,
+.wcr54-btn-recesso:focus {
+    background: #c0392b !important;
+    color: #fff !important;
+    outline: 2px solid #c0392b;
+    outline-offset: 2px;
+}
+
+.wcr54-giorni-left {
+    display: block;
+    font-size: 0.7rem;
+    color: #888;
+    margin-top: 4px;
+}
+
+.wcr54-na {
+    color: #aaa;
+}
+
+.wcr54-order-page-cta {
+    margin-top: 2em;
+    padding-top: 1.5em;
+    border-top: 1px solid #eee;
+}
+
+.wcr54-order-page-cta .wcr54-btn-recesso {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+}
+
+/* ── Modale overlay ────────────────────────────────────────────────────────── */
+.wcr54-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wcr54-modal[hidden] {
+    display: none;
+}
+
+.wcr54-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+}
+
+/* ── Modale box ────────────────────────────────────────────────────────────── */
+.wcr54-modal-box {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    border-radius: 6px;
+    padding: 2em 2.5em;
+    max-width: 520px;
+    width: 92%;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+}
+
+.wcr54-modal-box h2 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #1a1a1a;
+}
+
+.wcr54-modal-close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #555;
+    line-height: 1;
+    padding: 4px;
+}
+
+.wcr54-modal-close:focus {
+    outline: 2px solid #333;
+    border-radius: 2px;
+}
+
+.wcr54-subtitle {
+    color: #444;
+    font-size: 0.92rem;
+    margin-bottom: 1.2em;
+}
+
+/* ── Textarea motivo ───────────────────────────────────────────────────────── */
+label[for="wcr54-reason"] {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+    font-size: 0.9rem;
+}
+
+#wcr54-reason {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.6em;
+    font-family: inherit;
+    font-size: 0.9rem;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+#wcr54-reason:focus {
+    outline: 2px solid #c0392b;
+    border-color: #c0392b;
+}
+
+/* ── Info box ──────────────────────────────────────────────────────────────── */
+.wcr54-info-box {
+    background: #f8f8f8;
+    border-left: 3px solid #c0392b;
+    padding: 0.8em 1em;
+    margin: 1.2em 0;
+    font-size: 0.85rem;
+    color: #444;
+}
+
+.wcr54-info-box p {
+    margin: 0.25em 0;
+}
+
+/* ── Step 2 warning ────────────────────────────────────────────────────────── */
+.wcr54-warning {
+    background: #fff3f3;
+    border: 1px solid #f5c6c6;
+    border-radius: 4px;
+    padding: 1em;
+    color: #7b1a1a;
+    font-size: 0.92rem;
+}
+
+.wcr54-btn-group {
+    display: flex;
+    gap: 0.75em;
+    margin-top: 1.5em;
+}
+
+/* ── Step 3 success ────────────────────────────────────────────────────────── */
+.wcr54-success-icon {
+    font-size: 2.5rem;
+    color: #27ae60;
+    margin-bottom: 0.5em;
+}
+
+/* ── Errore ────────────────────────────────────────────────────────────────── */
+.wcr54-error {
+    background: #fff3f3;
+    border: 1px solid #f5c6c6;
+    border-radius: 4px;
+    padding: 0.8em 1em;
+    color: #7b1a1a;
+    font-size: 0.9rem;
+    margin-top: 1em;
+}
+
+/* ── Bottone "Procedi" ─────────────────────────────────────────────────────── */
+.wcr54-btn-step2,
+.wcr54-btn-confirm {
+    background: #c0392b !important;
+    border-color: #c0392b !important;
+    color: #fff !important;
+    margin-top: 1em;
+}
+
+.wcr54-btn-step2:hover,
+.wcr54-btn-confirm:hover {
+    background: #a93226 !important;
+    border-color: #a93226 !important;
+}
+
+.wcr54-btn-step2:disabled,
+.wcr54-btn-confirm:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ── Accessibilità: focus visibile ─────────────────────────────────────────── */
+.wcr54-btn-step2:focus,
+.wcr54-btn-confirm:focus,
+.wcr54-btn-back:focus {
+    outline: 2px solid #c0392b;
+    outline-offset: 2px;
+}
+
+/* ── Reduced motion ────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    .wcr54-btn-recesso,
+    .wcr54-btn-step2,
+    .wcr54-btn-confirm {
+        transition: none;
+    }
+}
+
+/* ── Mobile ────────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+    .wcr54-modal-box {
+        padding: 1.5em 1.2em;
+    }
+    .wcr54-btn-group {
+        flex-direction: column;
+    }
+}
