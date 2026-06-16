@@ -1,6 +1,6 @@
 # Recedo
 
-> Pulsante di recesso 54-bis per WooCommerce — *recedo*, dal latino "io recedo".
+> Pulsante di recesso 54-bis per WooCommerce
 
 **Versione:** 1.0.0  
 **Autore:** [Giovanni Bernardi](https://github.com/Giovanni-Bernardi)  
